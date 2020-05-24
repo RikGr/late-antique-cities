@@ -1,10 +1,14 @@
 {
-  "name": "late-antique-cities",
-  "version": "1.0.0",
-  "description": "",
+  "name": "node-js-getting-started",
+  "version": "0.3.0",
+  "description": "A sample Node.js app using Express 4",
+  "engines": {
+    "node": "12.x"
+  },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "node test.js"
   },
   "dependencies": {
     "ejs": "^2.5.6",
@@ -16,13 +20,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RikGr/late-antique-cities.git"
+    "url": "https://github.com/heroku/node-js-getting-started"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/RikGr/late-antique-cities/issues"
-  },
-  "homepage": "https://github.com/RikGr/late-antique-cities#readme"
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
 }
