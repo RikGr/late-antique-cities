@@ -7,8 +7,8 @@ let locations = [
   ];
 
   let map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 4,
-    center: new google.maps.LatLng(41.00, 28.87),
+    zoom: 6,
+    center: new google.maps.LatLng(42.00, 26.00),
     mapTypeId: google.maps.MapTypeId.HYBRID
   });
 
