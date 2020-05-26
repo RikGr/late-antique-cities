@@ -1,4 +1,45 @@
-#map {
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Martel', serif;
+    background-color: #e0ddd5;
+    margin: 0;
+}
+.header {
+    background-color: #2e3546;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;    
+} 
+.intro{
     height: 400px;
-    width: 100%;
+    width: 40%;
+    float: left;
+    margin-left: 1%;
+    padding: 20px;
+    color: white;
+    background-color: #283D70;
+    border-radius: 5px;
+}
+#map {
+    padding-top: 10px;
+    height: 400px;
+    width: 57%;
+    margin-left: 1%;
+    float: left;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 531px) {
+    #map { 
+        width: 95%;
+    }
+    .intro {
+        width: 95%;
+        margin-bottom: 10px;
+        height: 200px;
+    }
+
 }
