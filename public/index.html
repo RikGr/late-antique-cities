@@ -1,15 +1,46 @@
 <html>
   <head>
   <title>Late Antique cities and where to find them</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">.
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="./styles.css"/>
-	<link href="https://fonts.googleapis.com/css2?family=Martel&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Martel&display=swap" rel="stylesheet">
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
     <body>
       <div class="header"><h1>Late Antique archeological sites on the Balkan</h1></div>
-		  <div class="intro"><p>I have used the Google Maps Javascript API to pinpoint some of the archeological sites I used in my Masters Thesis.</p></div>  
+		  <div class="intro"><p>I have used the Google Maps Javascript API to pinpoint some major antique archeaological sites in the Danube-Balkan region.</p></div>  
       <div id="map"></div>
-   
+      <div class=photo_container>
+        <div id="photoCon_constantinople">
+          <div class="wrapper">
+            <nav class="lil-nav">
+              <a href="#image-1">
+              <img class="lil-nav__img" src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Constantine_I_Hagia_Sophia.jpg" alt="Constantine I" />
+            </a>
+            <a href="#image-2">
+              <img class="lil-nav__img" src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Chora_Church_Constantinople_2007_panorama_002.jpg" alt="Chora Church" />
+            </a>
+            <a href="#image-3">
+              <img class="lil-nav__img" src="https://upload.wikimedia.org/wikipedia/commons/3/36/Istanbull_-_palasset_-_13.jpg" alt="Eagle and Snake" />
+            </a>
+          </nav>
+            <div class="gallery">
+            <img class="gallery__img" id="image-1" src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Constantine_I_Hagia_Sophia.jpg" alt="Constantine I" />
+            <img class="gallery__img" id="image-2" src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Chora_Church_Constantinople_2007_panorama_002.jpg" alt="Chora Church" />
+            <img class="gallery__img" id="image-3" src="https://upload.wikimedia.org/wikipedia/commons/3/36/Istanbull_-_palasset_-_13.jpg" alt="Eagle and Snake" />
+          </div>  
+          </div>  
+        </div>
+      
+
+        <div id="photoCon_nicopolisAdIstrum">  
+         <p>Test2</p>
+        </div>
+        <div id="photoCon_dorostorum">  
+         <p>Test3</p>
+        </div>
+      </div>  
+     
 	<script src ='./maps.js'></script>
         <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMGSXD_mLgatFhLfOogBMBKfcpAg_vxDw&callback=initMap">

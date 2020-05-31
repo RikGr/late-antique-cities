@@ -6,19 +6,23 @@ body {
     background-color: #e0ddd5;
     margin: 0;
 }
+
 .header {
     background-color: #2e3546;
     color: white;
-    padding: 10px;
+    padding: 2% 2% 2% 2%;
     margin-bottom: 20px;
-    text-align: center;    
+    text-align: left;    
+
 } 
+
 .intro{
     height: 400px;
     width: 40%;
     float: left;
     margin-left: 1%;
-    padding: 20px;
+    margin-bottom: 20px;
+    padding: 1%;
     color: white;
     background-color: #283D70;
     border-radius: 5px;
@@ -32,14 +36,103 @@ body {
     border-radius: 5px;
 }
 
-@media screen and (max-width: 531px) {
+.photo_container {
+   width: 100%;
+   overflow: hidden;
+   margin-left: 1%;
+   }
+
+#photoCon_constantinople, #photoCon_nicopolisAdIstrum, #photoCon_dorostorum {
+    display: none;
+}
+/* CSS voor de fotogalerij */
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.wrapper {
+  overflow: hidden;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-gap: 20px;
+
+}
+
+.gallery {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  }
+
+.gallery__img {
+  scroll-snap-align: start;
+  margin-bottom: 10px;
+  
+}
+
+.lil-nav {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  }
+
+  .lil-nav a {
+    height: 200px;
+    margin-bottom: 10px;
+    display: flex;
+     }
+
+  .lil-nav__img {
+ object-fit: cover;
+}
+
+.lil-nav__img:hover {
+  transform: scale(1.05);
+  filter: saturate(1);
+}
+
+@media screen and (max-width: 500px) {
     #map { 
+        margin-left: 2.5%;
         width: 95%;
+  
     }
     .intro {
+        margin-left: 2.5%;
         width: 95%;
         margin-bottom: 10px;
-        height: 200px;
+        height: 200px; 
     }
+    .lil-nav {
+      overflow-x: scroll;
+      overflow-y: hidden;
+      display: flex;
+      grid-row-start: 2;
+    }
+
+    .lil-nav a {
+      margin-left: 10px;
+    }
+    
+    
+    .wrapper {
+      overflow: hidden;
+      height: 100vh;
+      display: grid;
+      grid-template-rows: 2fr 1fr;
+      grid-template-columns: 5fr;
+      grid-gap: 10px;
+    }
+    .gallery {
+      overflow-x: hidden;
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      display: flex;
+    }
+
 
 }
