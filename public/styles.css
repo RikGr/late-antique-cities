@@ -5,134 +5,54 @@ body {
     font-family: 'Martel', serif;
     background-color: #e0ddd5;
     margin: 0;
+    overflow-y:scroll;
 }
-
 .header {
-    background-color: #2e3546;
-    color: white;
-    padding: 2% 2% 2% 2%;
-    margin-bottom: 20px;
-    text-align: left;    
+    background-color: #e0ddd5;
+    color: #191919;
+    padding: 0.5% 2% 0.5% 2%;
+    margin-bottom: 2px;
+    text-align: left;
+    border-bottom: #191919 2px solid;    
 
 } 
-
+.divider {
+  width: 100%;
+  height: 1px;
+  overflow: hidden;
+  background-color: #191919;
+  
+}
 .intro{
-    height: 400px;
-    width: 40%;
+    height: 50px;
+    width: 100%;
     float: left;
-    margin-left: 1%;
+    margin-left: 2%;
     margin-bottom: 20px;
-    padding: 1%;
-    color: white;
-    background-color: #283D70;
-    border-radius: 5px;
+    color: #191919;
+    background-color: #e0ddd5;
+    
 }
 #map {
     padding-top: 10px;
     height: 400px;
-    width: 57%;
-    margin-left: 1%;
-    float: left;
-    border-radius: 5px;
-}
+    width: 96%;
+    margin-left: 2%;
+    border-radius: 10px;
+    border: solid black 1px; 
+       }
 
-.photo_container {
-   width: 100%;
-   overflow: hidden;
-   margin-left: 1%;
-   }
-
-#photoCon_constantinople, #photoCon_nicopolisAdIstrum, #photoCon_dorostorum {
-    display: none;
-}
-/* CSS voor de fotogalerij */
-
-img {
-  display: block;
-  max-width: 100%;
-}
-
-.wrapper {
-  overflow: hidden;
-  height: 70vh;
-  display: grid;
-  grid-template-columns: 1fr 5fr;
-  grid-gap: 20px;
-
-}
-
-.gallery {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  }
-
-.gallery__img {
-  scroll-snap-align: start;
-  margin-bottom: 10px;
-  
-}
-
-.lil-nav {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  }
-
-  .lil-nav a {
-    height: 200px;
-    margin-bottom: 10px;
-    display: flex;
-     }
-
-  .lil-nav__img {
- object-fit: cover;
-}
-
-.lil-nav__img:hover {
-  transform: scale(1.05);
-  filter: saturate(1);
-}
-
-@media screen and (max-width: 500px) {
-    #map { 
-        margin-left: 2.5%;
-        width: 95%;
-  
-    }
-    .intro {
-        margin-left: 2.5%;
-        width: 95%;
-        margin-bottom: 10px;
-        height: 200px; 
-    }
-    .lil-nav {
-      overflow-x: scroll;
-      overflow-y: hidden;
-      display: flex;
-      grid-row-start: 2;
-    }
-
-    .lil-nav a {
-      margin-left: 10px;
-    }
+/* Foto's infoWindow */
+.gm-style img {
+    max-width: 250px;
+    margin-top: 5px;
+    height: 171px;
+    border-radius: 7px;
+    display: table-row;
     
-    
-    .wrapper {
-      overflow: hidden;
-      height: 100vh;
-      display: grid;
-      grid-template-rows: 2fr 1fr;
-      grid-template-columns: 5fr;
-      grid-gap: 10px;
     }
-    .gallery {
-      overflow-x: hidden;
-      overflow-y: hidden;
-      scroll-snap-type: x mandatory;
-      scroll-behavior: smooth;
-      display: flex;
+.gm-style .gm-style-iw-d {
+      text-align: center;
+      font-size: 15px;
+      margin-left: 5px;
     }
-
-
-}
